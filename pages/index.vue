@@ -1,3 +1,4 @@
 <template>
   <HomeBanner />
+  <ProjectsGrid />
 </template>

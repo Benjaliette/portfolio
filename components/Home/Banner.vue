@@ -1,17 +1,10 @@
 <template>
-  <section
-		class="banner"
-	>
-		<!-- Banner left contents -->
+  <section class="banner">
 		<div class="banner-infos">
-			<h1
-				class="banner-infos__header"
-			>
+			<h1 class="banner-infos__header">
 				Hi, I am Benjamin Liet
 			</h1>
-			<p
-				class="banner-infos__text"
-			>
+			<p class="banner-infos__text">
 				A Full-Stack Developer & a enthusiast learner
 			</p>
 			<div class="banner-infos__action">
