@@ -11,7 +11,7 @@
   </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 header {
   width: 100vw;
 
