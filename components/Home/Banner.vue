@@ -5,7 +5,7 @@
 				Hi, I am Benjamin Liet
 			</h1>
 			<p class="banner-infos__text">
-				A Full-Stack Developer & a enthusiast learner
+				A Full-Stack Developer & an Enthusiast Learner
 			</p>
 			<div class="banner-infos__action">
 				<BaseButton downloadText="BL-Resume.pdf" from="/CV.pdf">

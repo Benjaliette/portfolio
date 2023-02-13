@@ -1,3 +1,5 @@
 <template>
-  <AboutMe />
+  <div>
+
+  </div>
 </template>
