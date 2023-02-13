@@ -41,6 +41,7 @@ const projectLink = computed(() => `/projects/${props.project.id}`);
   .project-card__img {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
+    object-fit: fill;
     border: none;
   }
 
