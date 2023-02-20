@@ -1,5 +1,9 @@
 <template>
+  <button v-if="type == 'submit'" class="submit-btn" :type="type">
+    <slot></slot>
+  </button>
   <a
+    v-else
     :download="downloadText"
     :href="from"
     class="btn"
@@ -18,6 +22,10 @@ defineProps({
     type: String,
     required: true,
     default: "#"
+  },
+  type: {
+    type: String,
+    required: false,
   }
 })
 </script>
@@ -47,6 +55,27 @@ defineProps({
     color: $light-gray;
     transition-duration: 500ms;
     transition-property: background-color, color;
+  }
+}
+
+button.submit-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 0.625rem 1rem;
+  color: white;
+  letter-spacing: 0.05em;
+  background-color: $green;
+  border-radius: 0.5rem;
+  transition-duration: 500ms;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  &:focus {
+    box-shadow: inset 0 0 0 3px rgba( 0, 131, 115, 10%);
+    transition-duration: 500ms;
+  }
+
+  &:hover {
+    background-color: $greener;
   }
 }
 
