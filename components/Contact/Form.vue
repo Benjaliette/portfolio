@@ -4,7 +4,7 @@
 			<h2 class="contact-card__header">
 				Contact Form
       </h2>
-			<form action="/" class="contact-card__form" data-netlify=true>
+			<form class="contact-card__form" name="contact" netlify>
         <div class="contact__form-group">
           <label for="fullName">Full Name</label>
           <input
