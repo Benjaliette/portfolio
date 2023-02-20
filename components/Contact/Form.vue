@@ -92,6 +92,8 @@ section {
     margin-top: 1.75rem;
 
     .contact__form-group {
+      margin-top: 0.75rem;
+
       label {
         margin-bottom: 0.5rem;
         font-size: $text-large;
@@ -109,7 +111,7 @@ section {
       }
     }
 
-    .contact__form-action {
+    .contact__form-actions {
       margin-top: 1.75rem;
     }
   }
