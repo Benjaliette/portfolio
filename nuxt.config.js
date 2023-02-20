@@ -18,6 +18,21 @@ export default defineNuxtConfig({
       },
     },
   },
+  modules: [
+    ['nuxt-mail', {
+      message: {
+        to: 'benjamin.liet.dev@gmail.com',
+      },
+      smtp: {
+        host: "live.smtp.mailtrap.io",
+        port: 587,
+        auth: {
+          user: "api",
+          pass: process.env.API_MAIL_PASSWORD
+        }
+      },
+    }],
+  ],
   buildModules: [
     '@nuxt/postcss8',
   ],

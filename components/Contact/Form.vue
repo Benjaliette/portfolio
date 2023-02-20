@@ -4,7 +4,7 @@
 			<h2 class="contact-card__header">
 				Contact Form
       </h2>
-			<form action="#" class="contact-card__form">
+			<form class="contact-card__form" @submit.prevent="send">
         <div class="contact__form-group">
           <label for="fullName">Full Name</label>
           <input
@@ -65,7 +65,18 @@ const contact = reactive({
   email: "",
   subject: "",
   message: "",
-})
+});
+
+const mail = useMail()
+
+const send = async () => {
+  mail.send({
+    from: contact.email,
+    subject: contact.subject,
+    text: contact.message,
+  })
+}
+
 </script>
 
 <style scoped lang="scss">
