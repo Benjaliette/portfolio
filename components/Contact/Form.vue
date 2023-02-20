@@ -4,12 +4,13 @@
 			<h2 class="contact-card__header">
 				Contact Form
       </h2>
-			<form class="contact-card__form" @submit.prevent="send">
+			<form action="/" class="contact-card__form" data-netlify=true>
         <div class="contact__form-group">
           <label for="fullName">Full Name</label>
           <input
             id="fullName"
             v-model.trim="contact.fullName"
+            name="fullName"
             placeholder="Full Name"
             type="text"
             required
@@ -20,6 +21,7 @@
           <input
             id="email"
             v-model.trim="contact.email"
+            name="email"
             placeholder="Email"
             type="email"
             required
@@ -30,6 +32,7 @@
           <input
             id="subject"
             v-model.trim="contact.subject"
+            name="subject"
             placeholder="Subject"
             type="text"
             required
@@ -40,6 +43,7 @@
           <textarea
             id="message"
             v-model.trim="contact.message"
+            name="message"
             placeholder="Message"
             type="text"
             required
@@ -67,15 +71,15 @@ const contact = reactive({
   message: "",
 });
 
-const mail = useMail()
+// const mail = useMail()
 
-const send = async () => {
-  mail.send({
-    from: contact.email,
-    subject: contact.subject,
-    text: contact.message,
-  })
-}
+// const send = async () => {
+//   mail.send({
+//     from: contact.email,
+//     subject: contact.subject,
+//     text: contact.message,
+//   })
+// }
 
 </script>
 
