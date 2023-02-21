@@ -38,8 +38,6 @@ section {
   }
 
   .contact-list {
-    list-style: none;
-
     .contact-list__item {
       display: flex;
       align-items: center;

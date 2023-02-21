@@ -1,5 +1,8 @@
 <template>
-  <div>
-    Project {{ $route.params.id }}
-  </div>
+  <ProjectsHeader />
+  <ProjectsDetails />
 </template>
+
+<script setup>
+
+</script>

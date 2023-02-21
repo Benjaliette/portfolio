@@ -15,8 +15,10 @@
 			<p>
 				{{ props.project.title }}
 			</p>
-			<span>{{ props.project.category }}</span
-			>
+			<span v-for="(category, index) in props.project.categories" :key="index">
+        {{ category }}
+        <span v-if="index != Object.keys(props.project.categories).length - 1">, </span>
+      </span>
 		</div>
 	</NuxtLink>
 </template>

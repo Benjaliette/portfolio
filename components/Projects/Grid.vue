@@ -56,9 +56,9 @@
 <script setup>
 const searchProject = ref("");
 
-const response = await useFetch('/api/projects')
+const response = await useFetch('/api/projects');
 
-const projectList = computed(() => response.data.value.projectList);
+const projectList = computed(() => response.data.value.projects);
 </script>
 
 <style scoped lang="scss">
