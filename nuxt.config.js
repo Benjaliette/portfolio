@@ -48,6 +48,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Benjamin Liet - Portfolio",
+    },
+    body: {
+      h1: "TEST",
     }
-  }
+  },
 });

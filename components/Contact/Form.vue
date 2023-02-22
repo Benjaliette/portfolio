@@ -4,7 +4,14 @@
 			<h2 class="contact-card__header">
 				Contact Form
       </h2>
-			<form class="contact-card__form" name="contact" netlify method="POST">
+			<form
+        class="contact-card__form"
+        name="contact"
+        netlify
+        netlify-honeypot="bot-field"
+        method="POST"
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <div class="contact__form-group">
           <label for="fullName">Full Name</label>
           <input
