@@ -7,11 +7,14 @@
 			<form
         class="contact-card__form"
         name="contact"
-        netlify
+        data-netlify="true"
         netlify-honeypot="bot-field"
         method="POST"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
         <div class="contact__form-group">
           <label for="fullName">Full Name</label>
           <input
