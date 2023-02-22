@@ -32,6 +32,7 @@ export default defineNuxtConfig({
         }
       },
     }],
+    '@pinia/nuxt',
   ],
   buildModules: [
     '@nuxt/postcss8',

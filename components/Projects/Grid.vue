@@ -26,26 +26,30 @@
           name="projects"
           id="projects"
           class="projects__filter"
+          v-model="language"
         >
-          <option value="0">Any language</option>
-          <option value="ruby">
+          <option value="">Any language</option>
+          <option value="Ruby">
             Ruby/Rails
           </option>
-          <option value="python">
+          <option value="Python">
             Python/Django
           </option>
-          <option value="vue">
-            JS/Vue3
+          <option value="JavaScript">
+            JavaScript
           </option>
-          <option value="nuxt">
-            JS/Nuxt3
+          <option value="Nuxt">
+            Nuxt3
+          </option>
+          <option value="Vue">
+            Vue3
           </option>
         </select>
 			</div>
 		</div>
 		<div class="projects__grid">
 			<ProjectsCard
-				v-for="project in projectList"
+				v-for="project in filtProjects"
 				:key="project.id"
 				:project="project"
 			/>
@@ -54,11 +58,27 @@
 </template>
 
 <script setup>
+import { useProjectsStore } from '~~/store/projects';
+
+const projectStore = useProjectsStore()
+
 const searchProject = ref("");
+const filtProjects = ref("");
+const language = ref("");
 
-const response = await useFetch('/api/projects');
+onMounted(() => {
+  filtProjects.value = projectStore.allProjects;
+});
 
-const projectList = computed(() => response.data.value.projects);
+const filterProjects = () => {
+  if (language.value === "") {
+    filtProjects.value = projectStore.allProjects;
+  } else {
+    projectStore.filterProjects(language.value);
+    filtProjects.value = projectStore.filtProjects;
+  }
+}
+
 </script>
 
 <style scoped lang="scss">
