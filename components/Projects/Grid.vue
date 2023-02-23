@@ -18,7 +18,7 @@
 						type="search"
 						required=""
 						placeholder="Search Projects"
-						aria-label="Name"
+						@input="search"
 					/>
 				</div>
         <select
@@ -77,8 +77,12 @@ const filterProjects = () => {
     projectStore.filterProjects(language.value);
     filtProjects.value = projectStore.filtProjects;
   }
-}
+};
 
+const search = () => {
+  projectStore.searchThroughProjects(searchProject.value);
+  filtProjects.value = projectStore.filtProjects;
+};
 </script>
 
 <style scoped lang="scss">

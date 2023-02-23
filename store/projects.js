@@ -18,7 +18,6 @@ export const useProjectsStore = defineStore({
         Object.values(response.projects).forEach(project => {
           this.projects.push(project);
         });
-        console.log(this.projects);
       } catch (error) {
         console.log(error);
         throw error
@@ -27,6 +26,9 @@ export const useProjectsStore = defineStore({
     async filterProjects(language) {
       this.filteredProjects = this.projects.filter((project) => project.languages.includes(language))
     },
+    async searchThroughProjects(input) {
+      this.filteredProjects = this.projects.filter((project) => project.title.toLowerCase().includes(input))
+    }
   },
   getters: {
     allProjects: state => state.projects,
