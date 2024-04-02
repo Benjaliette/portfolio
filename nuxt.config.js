@@ -46,6 +46,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  nitro: {
+    preset: 'netlify-edge'
+  },
   app: {
     head: {
       title: "Benjamin Liet - Portfolio",
