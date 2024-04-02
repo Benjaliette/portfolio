@@ -7,8 +7,8 @@
 			<ul class="contact-list">
 				<li class="contact-list__item">
 					<IconAddress />
-					<a href="https://goo.gl/maps/KtFwAKcFxQxKN7VX9" target="_blank">
-						6 rue Flornoy, 33000 Bordeaux, France
+					<a href="https://maps.app.goo.gl/KRNv5hnLJRvDJjad7" target="_blank">
+						15 allée Maurice Marinot, 33700 Mérignac, France
 					</a>
 				</li>
 				<li class="contact-list__item">

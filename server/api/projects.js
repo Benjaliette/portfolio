@@ -5,6 +5,7 @@ export default defineEventHandler((event) => {
       1: {
         id: 1,
         title: "Eligia",
+        url: "https://eligia-fa7ef5f340ed.herokuapp.com/",
         categories: [
           "Backend",
           "Frontend",
@@ -41,6 +42,7 @@ export default defineEventHandler((event) => {
       2: {
         id: 2,
         title: "CLIET Tableaux",
+        url: "https://www.cliet-tableaux.com/",
         categories: [
           "Backend",
           "Frontend",
@@ -73,6 +75,7 @@ export default defineEventHandler((event) => {
       3: {
         id: 3,
         title: "Stud•YOU",
+        url: "https://studyou.netlify.app/",
         categories: [
           "Frontend",
           "UI"
@@ -102,6 +105,7 @@ export default defineEventHandler((event) => {
       4: {
         id: 4,
         title: "Benjamin Liet Dev",
+        url: "https://www.benjamin-liet.online/",
         categories: [
           "Frontend",
         ],
@@ -126,34 +130,33 @@ export default defineEventHandler((event) => {
           ]
         }
       },
+      5: {
+        id: 5,
+        title: "Essenceo",
+        url: "https://superlative-meringue-01a725.netlify.app/",
+        categories: [
+          "Frontend",
+        ],
+        languages: [
+          "JavaScript",
+          "Angular",
+          "HTML",
+          "SCSS"
+        ],
+        img: "essenceo_screen.webp",
+        createdAt: {
+          month: 2,
+          year: 2024
+        },
+        details: {
+          client: "Myself",
+          objective: "The goal was to learn Angular by using a free API",
+          text: [
+            "With that website, I wanted to join useful and learning : by learning Angular, I learned the gasoline price too",
+            "For this little project, that I have not finished yet, we just can enter an adress and see the stations spots with wanted price"
+          ]
+        }
+      },
     }
-      // {
-      //   id: 1,
-      //   title: "Eligia",
-      //   category: "My company",
-      //   language: "ruby",
-      //   img: "eligia_screen.webp",
-      // },
-      // {
-      //   id: 2,
-      //   title: "CLIET Tableaux",
-      //   category: "Marketplace website",
-      //   language: "ruby",
-      //   img: "cliet_screen.webp",
-      // },
-      // {
-      //   id: 3,
-      //   title: "Stud•YOU",
-      //   category: "Vue learning project",
-      //   language: "js",
-      //   img: "studyou_screen.webp",
-      // },
-      // {
-      //   id: 4,
-      //   title: "Benjamin Liet Dev",
-      //   category: "Portfolio website",
-      //   language: "js",
-      //   img: "portfolio_screen.webp",
-      // },
   }
 })

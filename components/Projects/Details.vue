@@ -3,6 +3,14 @@
 		<aside>
 			<div class="project-section">
 				<h2 class="project-section__header">
+					URL
+				</h2>
+				<a :href="project.url" target="_blank">
+          {{ project.url }}
+        </a>
+			</div>
+			<div class="project-section">
+				<h2 class="project-section__header">
 					About Client
 				</h2>
 				<p>

@@ -25,7 +25,11 @@
         In the past year, I made a marketplace website for a french painter
         (CLIET Tableaux), I started my own company ELIGIA to help people in
         mourn to stop contract and subscriptions hold by the deceased, and I kept
-        learning again and again (Vue.js, Nuxt and Django).
+        learning again and again (Vue.js, Nuxt, Next.js and Django).
+        <br />
+        <br />
+        Today, I'm employed at Randstad Digital as consultant, specialized in Java
+        development, but I keep practicing to know many languages and frameworks as possible
         <br />
         <br />
         My journey is still long and I want to discover more, help a wider range
